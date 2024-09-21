@@ -9,7 +9,7 @@
         body {
             background-color: #f0f0f0; /* Light grey background */
             color: #333333; /* Dark grey text */
-            font-family: Arial, sans-serif; /* Professional font */
+            font-family: Georgia, serif; /* Change to Georgia font */
         }
 
         h1 {
@@ -42,7 +42,38 @@
             background: #333; /* Dark grey horizontal line */
             margin: 40px 0; /* Adds space around the horizontal line */
         }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1em;
+            color: white;
+            background-color: #333; /* Dark grey button */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #555; /* Slightly lighter grey on hover */
+        }
+
+        .btn i {
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        .btn-email {
+            background-color: #0072c6; /* Color for email button */
+        }
+
+        .btn-linkedin {
+            background-color: #0077b5; /* Color for LinkedIn button */
+        }
     </style>
+    <!-- Font Awesome CDN for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -66,8 +97,12 @@
     <section id="contact">
         <h2>Let's connect!</h2>
         <hr> <!-- Horizontal rule -->
-        <p>Email: </p>
-        <p>LinkedIn:</p>
+        <a href="mailto:example@example.com" class="btn btn-email">
+            <i class="fas fa-envelope"></i>Email
+        </a>
+        <a href="https://www.linkedin.com/in/example" target="_blank" class="btn btn-linkedin">
+            <i class="fab fa-linkedin"></i>LinkedIn
+        </a>
     </section>
 
     <footer>
