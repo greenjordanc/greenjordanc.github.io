@@ -23,10 +23,24 @@
         h2 {
             font-size: 2em;
             margin-top: 40px;
+            text-align: center; /* Center headings */
+        }
+
+        section {
+            margin: 40px auto; /* Adds space between sections */
+            width: 80%; /* Constrains the width of sections */
+            text-align: center; /* Center aligns text within sections */
         }
 
         p {
             font-size: 1.2em;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #333; /* Dark grey horizontal line */
+            margin: 40px 0; /* Adds space around the horizontal line */
         }
     </style>
 </head>
@@ -36,11 +50,13 @@
 
     <section id="about">
         <h2>About Me</h2>
+        <hr> <!-- Horizontal rule -->
         <p>I am an ambitious aspiring medical anthropologist and global health professional with a passion for fighting injustice and promoting health equity on a local and global scale. I seek to identify and dismantle oppressive systems to ensure an equitable future in which the value of human life, regardless of circumstances or differences, is no longer debated.</p>
     </section>
 
     <section id="projects">
         <h2>My Portfolio</h2>
+        <hr> <!-- Horizontal rule -->
         <div class="project">
             <h3>Project</h3>
             <p>Description of project 1.</p>
@@ -49,6 +65,7 @@
 
     <section id="contact">
         <h2>Let's connect!</h2>
+        <hr> <!-- Horizontal rule -->
         <p>Email: </p>
         <p>LinkedIn:</p>
     </section>
